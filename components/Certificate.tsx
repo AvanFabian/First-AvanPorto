@@ -3,7 +3,6 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
 import { certificate } from '@/constants'
-import { fadeIn, textVariant } from '@/utils/motion'
 import { SectionWrapper } from '@/hoc'
 
 import Image from "next/image"
@@ -22,8 +21,7 @@ interface CertificateCardProps {
 }
 const CertificateCard = ({ index, company, icon, desc}: CertificateCardProps) => {
     return (
-      <motion.div variants={fadeIn("up", "spring",
-       index * 0.5, 0.75)}>
+      <div >
         <Tilt
           options={{
             max: 45,
@@ -49,18 +47,18 @@ const CertificateCard = ({ index, company, icon, desc}: CertificateCardProps) =>
             text-[14px]">{desc}</p>
           </div>
         </Tilt>
-      </motion.div>
+      </div>
   )}
 
 const Certificate = () => {
   return (
     <>
-      <motion.div variants={textVariant(fadeIn('up', '', 0, 1))}>
+      <div >
         <p className='sectionSubText'
         >Certificate</p>
         <p className='sectionHeadText'
         >Certification</p>
-      </motion.div>
+      </div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {certificate.map((certif, index) => (
