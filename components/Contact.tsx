@@ -24,6 +24,8 @@ const RobotAnimation = () => {
   return View
 }
 
+
+
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [form, setForm] = useState({
@@ -48,17 +50,20 @@ const Contact = () => {
     e.preventDefault()
     setLoading(true)
 
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
+    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
+    const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
+    const formrefCurrent = formRef.current as HTMLFormElement;
 
     if (!serviceId) {
       throw new Error('SERVICE_ID is not defined');
     }
     // formRef.current is the form data
     emailjs.sendForm( 
-      process.env.NEXT_PUBLIC_SERVICE_ID,
-      process.env.NEXT_PUBLIC_TEMPLATE_ID,
-      formRef.current,
-      process.env.NEXT_PUBLIC_PUBLIC_KEY,
+      serviceId,
+      templateId,
+      formrefCurrent,
+      publicKey,
     ) .then((result) => {
         console.log(result.text)
         setLoading(false)
