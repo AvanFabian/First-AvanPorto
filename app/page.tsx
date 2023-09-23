@@ -1,7 +1,7 @@
 import About from '@/components/About'
 import Works from '@/components/Works'
 import Contact from '@/components/Contact'
-import Certificate from '@/components/Certificate'
+// import Certificate from '@/components/Certificate'
 
 export default function Home() {
   return (

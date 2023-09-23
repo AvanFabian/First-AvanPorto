@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { github } from "@/public/assets"
 import { SectionWrapper } from "@/hoc"
 import { projects } from "@/constants"
-import { fadeIn, textVariant } from "@/utils/motion"
 
 import Image from "next/image"
 
@@ -100,20 +99,19 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant(fadeIn("up", "spring", 0, 0.5))}>
+      <div >
         <p className='sectionSubText'>
           My Work
         </p>
         <h2 className='sectionHeadText'>
           My Projects.
         </h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex">
-        <motion.p
+        <p
         // The 2 empty "", it's the direction of transition
         // 0.1 is the animation delay and 1 is the duration
-          variants={fadeIn("", "", 0.1, 1)}
           // max-w-3xl is the max width of the text
           className="mt-3 text-secondary text-[17px]
            max-w-3xl leading-[30px]"
@@ -126,7 +124,7 @@ const Works = () => {
           <span className="text-white font-black">
             Click the Play icon to demo!
           </span>
-        </motion.p>
+        </p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">

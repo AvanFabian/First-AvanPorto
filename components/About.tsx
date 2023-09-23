@@ -3,7 +3,6 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
 import { services } from '@/constants'
-import { fadeIn, textVariant } from '@/utils/motion'
 import { SectionWrapper } from '@/hoc'
 
 import Image from 'next/image'
@@ -31,9 +30,8 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
       }}
       className='xs:w-[250px] w-full'>
       { /* motion.div mean that we want to animate a div */}
-      <motion.div
+      <div
         // spring is an animation that has a bounce effect
-        variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
         className='w-full green-pink-gradient p-[1px]
          rounded-[20px] shadow-card'
       >
@@ -47,7 +45,7 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
           </h3>
 
         </div>
-      </motion.div>
+      </div>
     </Tilt>
   )
 }
@@ -55,22 +53,21 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
 const About = () => {
   return (
     <section>
-      <motion.div variants={textVariant(fadeIn('up', '', 1, 1))}>
+      <div >
         <p className='sectionSubText'
         >Introduction</p>
         <h2 className='sectionHeadText'
         >Overview.</h2>
-      </motion.div>
+      </div>
 
-      <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
+      <p
         className='mt-4 text-secondary text-[17px]
         max-w-3xl leading-[30px]'
       >
         I am a student at the Universitas Negeri Malang, East Java, where I am majoring in computer science.&nbsp;
         I am passionate about web development and UI/UX design, and I have been working on a number of personal projects&nbsp;
         and university team projects.
-      </motion.p>
+      </p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
