@@ -2,10 +2,9 @@
 import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 
-import { styles } from '@/utils/styles'
-import { services } from '../constants'
-import { fadeIn, textVariant } from '../utils/motion'
-import { SectionWrapper } from '../hoc'
+import { services } from '@/constants'
+import { fadeIn, textVariant } from '@/utils/motion'
+import { SectionWrapper } from '@/hoc'
 
 import Image from 'next/image'
 
@@ -55,8 +54,8 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant(fadeIn('up', '', 0, 1))}>
+    <section>
+      <motion.div variants={textVariant(fadeIn('up', '', 1, 1))}>
         <p className='sectionSubText'
         >Introduction</p>
         <h2 className='sectionHeadText'
@@ -77,11 +76,11 @@ const About = () => {
         {services.map((service, index) => (
           // key purpose in below case is 
           // to tell react which element to update
-          <ServiceCard key={service.title}
+          <ServiceCard key={index}
             index={index} {...service} />
         ))}
       </div>
-    </>
+    </section>
   )
 }
 

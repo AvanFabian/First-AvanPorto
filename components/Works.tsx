@@ -29,8 +29,7 @@ interface ProjectCardProps {
 const ProjectCard = ( {index, name, description,
 tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
   return (
-    <motion.div variants={fadeIn("up", "spring",
-     index * 0.5, 0.75)}>
+    <div>
       <Tilt
         options={{
           max: 45,
@@ -40,7 +39,7 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
         className="bg-tertiary p-5 rounded-2xl
         sm:w-[360px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[230px] transition-all">
           <Image 
             src={image}
             alt={name}
@@ -95,7 +94,7 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
 )}
 
 const Works = () => {

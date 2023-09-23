@@ -13,45 +13,50 @@ import {
     shopify,
     starbucks,
     tesla,
+    abouticon,
+    certificon,
+    projecticon,
+    contacticon,
+    githubicon,
+    linkedinicon,
+    igicon,
   } from "@/public/assets";
   
   import MdPermIdentity from "react-icons/md"
 
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      link: "https://github.com/AvanFabian",
+      title: "Github",
+      icon: githubicon,
     },
     {
-      id: "project",
-      title: "Project",
-    },
-    {
-      id: "certification",
-      title: "Certification",
-    },
-    {
-      id: "contact",
-      title: "Contact",
+      link: "https://www.linkedin.com/in/avan-fabian-daniswara-4342b1254/",
+      title: "Linkedin",
+      icon: linkedinicon,
     },
   ];
 
   export const sideLinks = [
     {
       id: "about",
-      icon: "About",
+      title: "About",
+      icon: abouticon,
     },
-    {
-      id: "certification",
-      icon: "Certification",
-    },
+    // {
+    //   id: "certification",
+    //   title: "Certification",
+    //   icon: certificon,
+    // },
     {
       id: "project",
-      icon: "Project",
+      title: "Project",
+      icon: projecticon,
     },
     {
       id: "contact",
-      icon: "Contact",
+      title: "Contact",
+      icon: contacticon,
     },
   ];
   
@@ -144,49 +149,34 @@ import {
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+  // const testimonials = [
+  //   {
+  //     testimonial:
+  //       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+  //     name: "Sara Lee",
+  //     designation: "CFO",
+  //     company: "Acme Co",
+  //     image: "https://randomuser.me/api/portraits/women/4.jpg",
+  //   },
+  //   {
+  //     testimonial:
+  //       "I've never met a web developer who truly cares about their clients' success like Rick does.",
+  //     name: "Chris Brown",
+  //     designation: "COO",
+  //     company: "DEF Corp",
+  //     image: "https://randomuser.me/api/portraits/men/5.jpg",
+  //   },
+  //   {
+  //     testimonial:
+  //       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+  //     name: "Lisa Wang",
+  //     designation: "CTO",
+  //     company: "456 Enterprises",
+  //     image: "https://randomuser.me/api/portraits/women/6.jpg",
+  //   },
+  // ];
   
   const projects = [
-    {
-      name: "Jentara",
-      description:
-        "Web-based platform that allows users to search, learn, and configuring Indonesia cultures.",
-      tags: [
-        {
-          name: "Team Project",
-          color: "",
-        },
-      ],
-      demologo: playarrow,
-      demourl: "https://github.com/",
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
     {
       name: "Cry Cast",
       description:
@@ -198,14 +188,14 @@ import {
         },
       ],
       demologo: playarrow,
-      demourl: "https://github.com/",
+      demourl: "https://crycast.000webhostapp.com/",
       image: jobit,
       source_code_link: "https://github.com/AvanFabian/cry-cast.git",
     },
     {
-      name: "Realtime Message",
+      name: "First React Portfolio Website",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "My first portfolio website builded using ReactJS and threeJS for the 3d assets.",
       tags: [
         {
           name: "Personal Project",
@@ -213,10 +203,10 @@ import {
         },
       ],
       demologo: playarrow,
-      demourl: "https://github.com/",
+      demourl: "https://avanfabian.vercel.app/",
       image: tripguide,
       source_code_link: "https://github.com/",
     },
   ];
   
-  export { services, certificate, experiences, testimonials, projects };
+  export { services, certificate, experiences, projects };

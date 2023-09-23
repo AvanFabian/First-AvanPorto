@@ -16,16 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="relative z-0 bg-[#0e0e1a]">
-          <div className="relative bg-hero-mountain bg-cover
+        <div className="relative z-0 black-blue-gradient">
+          <div className="relative bg-hero-planet bg-cover
           bg-no-repeat bg-center">
             <Navbar />
             <Hero />
           </div>
-          <div className='paddingAll max-w-7xl
-            mx-auto relative z-0'>
             {children}
-          </div>
         </div>
       </body>
     </html>

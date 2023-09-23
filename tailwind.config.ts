@@ -26,8 +26,11 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        "hero-pattern": "url('/assets/herobg.png')",
-        "hero-mountain": "url('/assets/heromountain.jpg')",
+          "hero-mountain": "url('/assets/heromountain.jpg')",
+          "hero-planet": "url('/assets/wallpaper/planethome.jpg')", 
+          "hero-planet2": "url('/assets/wallpaper/planethome2.jpg')", 
+          "spacestar": "url('/assets/wallpaper/spacestar.jpg')",
+          "starwpp": "url('/assets/wallpaper/starwpp.jpg')",
       },
     },
   },

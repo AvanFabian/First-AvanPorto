@@ -2,14 +2,27 @@
 import { useState, useRef } from "react"
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser';
-
+import { useLottie } from "lottie-react";
 // import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
-import { slideIn } from "../utils/motion"
+import { slideIn } from "@/utils/motion"
+import contactlottie from "@/public/assets/animations/contact-lottie1.json"
 
-// template_0ajjn1u : TEMPLATE_ID
-// service_hsiu91g : SERVICE_ID
-// vNmY8jwBUKYwTsWNk : PUBLIC_KEY
+const RobotAnimation = () => {
+  const style2 = {
+      width: 800,
+      height: 650,
+  }
+
+  const options = {
+      animationData: contactlottie,
+      loop: true,
+      autoplay: true,
+  }
+
+  const { View } = useLottie(options, style2)
+  return View
+}
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -64,7 +77,7 @@ const Contact = () => {
 
   return (
     <div className="xl:mt-12 xl:flex-row
-     flex-col-reverse flex gap-10 overflow-hidden">
+     flex-col-reverse flex overflow-hidden">
       <motion.div
       // left is the initial position, tween is the animation
       // 0.2 is the delay, 1 is the duration
@@ -155,10 +168,9 @@ const Contact = () => {
       <motion.div
       variants={slideIn("right", "tween", 0.2, 1)}
       className="xl:flex-1 xl:h-auto
-      md:h-[550px] h-[350px]"
+      md:h-[550px] h-[350px] "
       >
-        {/* <EarthCanvas /> */}
-        EarthCanvas
+        <RobotAnimation />
       </motion.div>
     </div>
   )

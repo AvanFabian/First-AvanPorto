@@ -34,11 +34,11 @@ const Navbar = () => {
         </Link>
         { /* sm:flex is too show the menu when screen size is 640px and above */ }
         <ul className='list-none hidden lg:flex
-        flex-row gap-10'> 
+        flex-row gap-20'> 
         {/* bg-white rounded-full px-3 py-2 rotate-90 */}
           {navLinks.map((link) => (
             <li
-              key={link.id} // key is for unique identifier
+              key={link.link} // key is for unique identifier
               className={`${
                 // active state value is getting from useState
                 active === link.title // if active is equal to link.title
@@ -47,7 +47,14 @@ const Navbar = () => {
               } hover:text-[#beb9b9] text-[18px] font-bold cursor-pointer`}
               onClick={() => setActive(link.title)} // set active to link.title
               >
-              <a href={`#${link.id}`}> {link.title} </a> 
+              <a href={`${link.link}`} target="_blank"> 
+                <Image 
+                  src={link.icon}
+                  alt={link.title}
+                  className='w-[32px] h-[32px]
+                  object-contain '
+                />
+              </a> 
             </li>
           ))}
         </ul>

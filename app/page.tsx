@@ -5,10 +5,19 @@ import Certificate from '@/components/Certificate'
 
 export default function Home() {
   return (
-    <main>
-      <About />
-      <Certificate />
-      <Works />
+    <main className=''>
+      <div className='paddingAll max-w-7xl
+        mx-auto relative z-0'>
+        <About />
+      </div>
+      {/* <div className='paddingAll max-w-7xl
+        mx-auto relative z-0'>
+        <Certificate />
+      </div> */}
+      <div className='paddingAll max-w-7xl
+        mx-auto relative z-0'>
+        <Works />
+      </div>
       <div className="relative z-0">
           <Contact />
       </div>

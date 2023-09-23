@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { sideLinks } from '@/constants'
 import Image from 'next/image'
+import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
   const [active, setActive] = useState(''); // set active to empty string
@@ -15,34 +16,66 @@ const Hero = () => {
         { /* div below is for the text */ }
           <div>
           { /* &apos; is for escaping ' sign */ }
-            <h1 className='heroHeadText'>Hi, I&apos;m <span 
-            className="text-[#f8f3f2]">Fabian</span></h1>
+
+            <h1 className='heroHeadText'>
+              <TypeAnimation
+                sequence={[
+                    "Hi, I'm Fabian", // Types 'Discover'
+                    1000, // Waits 1s
+                    "Hi, I'm Fabian", // Types 'Discover'
+                    1000, // Waits 1s
+                    '', // Types ''
+                ]}
+                wrapper="div"
+                cursor={true}
+                repeat={Infinity}
+              />
+            </h1>
             <p className='heroSubText mt-2
-            text-[#949191]'>
-              I develop a&nbsp;Fullstack Web and <br />Mobile Apps
+            text-[#ecebeb] opacity-80'>
+              I develop a&nbsp;Fullstack Web <br />and Mobile Apps
+              {/* <TypeAnimation
+                  sequence={[
+                    'Discover & Find', // Types 'Discover'
+                    1000, // Waits 1s
+                    'Discover & Find', // Types 'Discover'
+                    1000, // Waits 1s
+                    '', // Types ''
+                    500, // Waits 0.5s
+                  ]}
+                  wrapper="div"
+                  cursor={true}
+                  repeat={Infinity}
+              />               */}
               <br className="sm:block hidden"/>
             </p>
           </div>
         </div>
         <div className=''>
-          <ul className='list-none px-2 py-6 top-[219px] right-0 my-2  
+          <ul className='list-none px-2 py-6 top-[195.5px] right-0 my-2  
           z-10 flex justify-end rounded-tl-xl rounded-bl-xl
-          items-start flex-col gap-8 fixed bg-[#0607149a]'> 
-            {sideLinks.map((link) => (
+          items-start flex-col gap-12 fixed bg-[#4b4b4b9a]'> 
+            {sideLinks.map((link, index) => (
               <li
                 key={link.id} // key is for unique identifier
+                index={index}
                 className={`${
                   // active state value is getting from useState
                   active === link.title // if active is equal to link.title
-                    ? "text-white"
-                    : "text-secondary"
-                } font-poppins font-medium text-[16px] cursor-pointer`}
+                    ? "transition-all"
+                    : "underline"
+                } hover:cursor-pointer opacity-75 hover:opacity-100`}
                 onClick={() => { 
                   setActive(link.title)} // set active to link.title
                 }
                 >
-                <a href={`#${link.id}`}> 
-                  {link.icon} 
+                <a href={`#${link.id}`}>
+                  <Image 
+                    src={link.icon}
+                    alt={link.title}
+                    className='w-[28px] h-[28px]
+                    object-contain '
+                  />
                 </a> 
               </li>
             ))}
