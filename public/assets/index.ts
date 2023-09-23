@@ -17,6 +17,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import crycast from "./company/crycast.png";
+import firstporto from "./company/firstporto.png";
+import promptworld from "./company/promptworld.png";
 
 // Side navbar icon
 import abouticon from "./navigation/abouticon.svg";
@@ -53,4 +56,7 @@ export {
   shopify,
   starbucks,
   tesla,
+  crycast,
+  firstporto,
+  promptworld,
 };

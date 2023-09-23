@@ -20,6 +20,9 @@ import {
     githubicon,
     linkedinicon,
     igicon,
+    crycast,
+    firstporto,
+    promptworld,
   } from "@/public/assets";
   
   export const navLinks = [
@@ -178,7 +181,7 @@ import {
     {
       name: "Cry Cast",
       description:
-        "Cry Cast is a cryptocurrency prediction platform that uses advanced machine learning techniques to help users make profitable investments. The platform combines real-time data and expert analysis to classify and predict market trends with high accuracy.",
+        "Cry Cast is a cryptocurrency prediction platform that uses machine learning to predict the price of cryptocurrency. The website is builded using native Javascript, Bootstrap, Laravel and MySQL as the database and deployed on 000webhost. This project is major assignment in my Web Programming lecture.",
       tags: [
         {
           name: "Team Project",
@@ -187,7 +190,7 @@ import {
       ],
       demologo: playarrow,
       demourl: "https://crycast.000webhostapp.com/",
-      image: jobit,
+      image: crycast,
       source_code_link: "https://github.com/AvanFabian/cry-cast.git",
     },
     {
@@ -202,8 +205,23 @@ import {
       ],
       demologo: playarrow,
       demourl: "https://avanfabian.vercel.app/",
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: firstporto,
+      source_code_link: "https://github.com/AvanFabian/Next-DaniswaraPorto.git",
+    },
+    {
+      name: "PromptWorld",
+      description:
+        "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. The website is builded using NextJS and TailwindCSS. MongoDB as the database and deployed on Vercel.",
+      tags: [
+        {
+          name: "Personal Project",
+          color: "",
+        },
+      ],
+      demologo: playarrow,
+      demourl: "https://promptworld-danis.vercel.app/",
+      image: promptworld,
+      source_code_link: "https://github.com/AvanFabian/next-fs-gptsharing.git",
     },
   ];
   
