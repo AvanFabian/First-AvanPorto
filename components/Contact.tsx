@@ -5,7 +5,6 @@ import emailjs from '@emailjs/browser';
 import { useLottie } from "lottie-react";
 // import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc"
-import { slideIn } from "@/utils/motion"
 import contactlottie from "@/public/assets/animations/contact-lottie1.json"
 
 const RobotAnimation = () => {
@@ -83,10 +82,9 @@ const Contact = () => {
   return (
     <div className="xl:mt-12 xl:flex-row
      flex-col-reverse flex overflow-hidden">
-      <motion.div
+      <div
       // left is the initial position, tween is the animation
       // 0.2 is the delay, 1 is the duration
-        variants={slideIn("left", "tween", 0.2, 1)}
         // flex-[0.75] is 3/4 width of the parent or screen 
         className="flex-[0.75] bg-black-100 p-8
          rounded-2xl"
@@ -167,16 +165,15 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </div>
 
       {/* Motion div for earth model */}
-      <motion.div
-      variants={slideIn("right", "tween", 0.2, 1)}
+      <div
       className="xl:flex-1 xl:h-auto
       md:h-[550px] h-[350px] "
       >
         <RobotAnimation />
-      </motion.div>
+      </div>
     </div>
   )
 }
