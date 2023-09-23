@@ -57,8 +57,7 @@ const Hero = () => {
           items-start flex-col gap-12 fixed bg-[#4b4b4b9a]'> 
             {sideLinks.map((link, index) => (
               <li
-                key={link.id} // key is for unique identifier
-                index={index}
+                key={index} // key is for unique identifier
                 className={`${
                   // active state value is getting from useState
                   active === link.title // if active is equal to link.title

@@ -48,17 +48,17 @@ const Contact = () => {
     e.preventDefault()
     setLoading(true)
 
-    const serviceId = process.env.SERVICE_ID;
+    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
 
     if (!serviceId) {
       throw new Error('SERVICE_ID is not defined');
     }
     // formRef.current is the form data
     emailjs.sendForm( 
-      process.env.SERVICE_ID,
-      process.env.TEMPLATE_ID,
+      process.env.NEXT_PUBLIC_SERVICE_ID,
+      process.env.NEXT_PUBLIC_TEMPLATE_ID,
       formRef.current,
-      process.env.PUBLIC_KEY,
+      process.env.NEXT_PUBLIC_PUBLIC_KEY,
     ) .then((result) => {
         console.log(result.text)
         setLoading(false)

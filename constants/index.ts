@@ -22,8 +22,6 @@ import {
     igicon,
   } from "@/public/assets";
   
-  import MdPermIdentity from "react-icons/md"
-
   export const navLinks = [
     {
       link: "https://github.com/AvanFabian",

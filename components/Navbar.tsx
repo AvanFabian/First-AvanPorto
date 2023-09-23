@@ -77,7 +77,7 @@ const Navbar = () => {
               items-start flex-col gap-4'> 
                 {navLinks.map((link) => (
                   <li
-                    key={link.id} // key is for unique identifier
+                    key={link.link} // key is for unique identifier
                     className={`${
                       // active state value is getting from useState
                       active === link.title // if active is equal to link.title
@@ -89,7 +89,7 @@ const Navbar = () => {
                       setActive(link.title)} // set active to link.title
                     }
                     >
-                    <a href={`#${link.id}`}> {link.title} </a> 
+                    <a href={`${link.link}`}> {link.title} </a> 
                   </li>
                 ))}
               </ul>
