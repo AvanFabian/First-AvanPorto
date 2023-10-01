@@ -36,7 +36,7 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
           speed: 450
         }}
         className="bg-tertiary p-5 rounded-2xl
-        sm:w-[360px] w-full"
+        sm:w-[360px] h-full w-full"
       >
         <div className="relative w-full h-[230px] transition-all">
           <Image 
@@ -75,7 +75,7 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
         </div>
 
         {/* BELOW IS FOR NAME AND DESCRIPTION OF THE PROJECT */}
-        <div className="mt-5">
+        <div className="mt-5 mb-5">
           <h3 className="text-white font-bold
           text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary
@@ -83,7 +83,7 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
         </div>
 
         {/* BELOW IS FOR TECH STACK */}
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 absolute bottom-[20px]">
           {/* Map the tags */}
           {tags.map((tag: any) => (
             <p key={tag.name} className={`text-[14px]

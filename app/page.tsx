@@ -18,7 +18,8 @@ export default function Home() {
         mx-auto relative z-0'>
         <Works />
       </div>
-      <div className="relative z-0">
+      <div className="paddingAll max-w-7xl
+        mx-auto relative z-0">
           <Contact />
       </div>
     </main>
