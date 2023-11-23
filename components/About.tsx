@@ -28,7 +28,7 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
         scale: 1,
         speed: 450
       }}
-      className='xs:w-[250px] w-full'>
+      className='xs:w-[250px] w-full mx-auto lg:mx-1'>
       { /* motion.div mean that we want to animate a div */}
       <div
         // spring is an animation that has a bounce effect

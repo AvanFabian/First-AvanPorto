@@ -9,12 +9,10 @@ import contactlottie from "@/public/assets/animations/contact-lottie1.json";
 
 const RobotAnimation = () => {
   const style2 = {
-    width: 600,
-    height: 650,
-    paddingLeft: "100px",
+    width: 400,
+    height: 550,
+    marginLeft: '100px',
     display: "flex",
-    position: 'relative',
-    marginTop: '200px',
   };
 
   const options = {
@@ -62,7 +60,6 @@ const Contact = () => {
     // formRef.current is the form data
     emailjs.sendForm(serviceId, templateId, formrefCurrent, publicKey).then(
       (result) => {
-        console.log(result.text);
         setLoading(false);
         alert("Thank you for your message, I will get back to you soon.");
         setForm({
@@ -81,29 +78,24 @@ const Contact = () => {
 
   return (
     <div
-      className="xl:mt-12 xl:flex-row
+      className="mt-6 lg:mt-12 lg:flex-row
      flex-col-reverse flex overflow-hidden"
     >
-      <div
-        // left is the initial position, tween is the animation
-        // 0.2 is the delay, 1 is the duration
-        // flex-[0.75] is 3/4 width of the parent or screen
-        className="flex-[0.75] bg-black-100 p-8
-         rounded-2xl"
-      >
+      {/* Contact */}
+      <div className="bg-black-100 w-full lg:w-[600px] h-full p-10 rounded-2xl">
         <p className="sectionSubText">Get in touch</p>
         <h3 className="sectionHeadText">Contact.</h3>
         <form
           // ref purpose here is to get the form data
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
+          className="mt-8 flex flex-col gap-8"
         >
           {/* below is the name input */}
           <label className="flex flex-col">
             <span
               className="text-white
-             font-medium mb-4"
+             font-medium text-xs mb-4"
             >
               Your Name
             </span>
@@ -114,7 +106,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your name?"
               // py is padding on y-axis, px is padding on x-axis
-              className="bg-tertiary py-4 px-6
+              className="bg-tertiary py-3 px-6
               placeholder:text-secondary
               text-white rounded-2xl outlined-none
               border-none font-medium"
@@ -135,7 +127,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your email?"
               // py is padding on y-axis, px is padding on x-axis
-              className="bg-tertiary py-4 px-6
+              className="bg-tertiary py-3 px-6
               placeholder:text-secondary
               text-white rounded-2xl outlined-none
               border-none font-medium"
@@ -149,18 +141,18 @@ const Contact = () => {
             >
               Your Message
             </span>
-            <textarea
-              rows={parseInt("7")}
+            <input
+              type="text"
               name="message"
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
               // py is padding on y-axis, px is padding on x-axis
-              className="bg-tertiary py-4 px-6
+              className="bg-tertiary py-3 px-6
               placeholder:text-secondary
               text-white rounded-2xl outlined-none
               border-none font-medium"
-            ></textarea>
+            ></input>
           </label>
           {/* below is the submit button */}
           <button
@@ -176,10 +168,9 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      {/* Motion div for earth model */}
+      {/* Robot ANimation */}
       <div
-        className="flex-[0.5] xl:h-auto
-      md:h-[550px] h-[350px] w-full justify-center align-middle"
+        className="hidden lg:flex items-center justify-end w-full lg:w-[50%]"
       >
         <RobotAnimation />
       </div>

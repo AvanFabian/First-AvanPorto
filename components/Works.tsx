@@ -28,7 +28,7 @@ interface ProjectCardProps {
 const ProjectCard = ( {index, name, description,
 tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
   return (
-    <div>
+    <div className="flex flex-col mx-auto lg:mx-0">
       <Tilt
         options={{
           max: 45,
@@ -36,7 +36,7 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
           speed: 450
         }}
         className="bg-tertiary p-5 rounded-2xl
-        sm:w-[360px] h-full w-full"
+        sm:w-[360px] mx-auto h-full w-full"
       >
         <div className="relative w-full h-[230px] transition-all">
           <Image 

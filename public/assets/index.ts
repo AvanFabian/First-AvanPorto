@@ -30,6 +30,7 @@ import contacticon from "./navigation/contacticon.svg";
 import githubicon from "./navigation/githubicon.svg";
 import linkedinicon from "./navigation/linkedinicon.svg";
 import igicon from "./navigation/igicon.svg";
+import home from "./navigation/home.svg";
 
 export {
   fabian,
@@ -39,6 +40,7 @@ export {
   mobile,
   web,
   github,
+  home,
   menu,
   close,
   dicoding,

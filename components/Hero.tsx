@@ -9,10 +9,10 @@ const Hero = () => {
   const [active, setActive] = useState(''); // set active to empty string
   return (
     <section className="relative w-full h-screen
-    mx-auto items-center">
+    mx-auto items-center" id="hero">
       <div className='sm:px-16 px-6 absolute
       inset-0 top-[120px] max-w-7xl mx-auto flex
-      flex-row items-start gap-5'>
+      flex-row items-start gap-2'>
         { /* div below is for the text */ }
           <div>
           { /* &apos; is for escaping ' sign */ }

@@ -1,6 +1,7 @@
-import About from "@/components/About";
-import Works from "@/components/Works";
-import Contact from "@/components/Contact";
+import dynamic from "next/dynamic";
+const About = dynamic(() => import("@/components/About"));
+const Works = dynamic(() => import("@/components/Works"));
+const Contact = dynamic(() => import("@/components/Contact"));
 // import Certificate from '@/components/Certificate'
 
 export default function Home() {

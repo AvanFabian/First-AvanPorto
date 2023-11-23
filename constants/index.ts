@@ -23,6 +23,7 @@ import {
     crycast,
     firstporto,
     promptworld,
+    home,
   } from "@/public/assets";
   
   export const navLinks = [
@@ -40,6 +41,11 @@ import {
 
   export const sideLinks = [
     {
+      id: "hero",
+      title: "Home",
+      icon: home,
+    },
+    {
       id: "about",
       title: "About",
       icon: abouticon,
@@ -53,7 +59,7 @@ import {
       id: "project",
       title: "Project",
       icon: projecticon,
-    },
+      },
     {
       id: "contact",
       title: "Contact",
@@ -211,7 +217,22 @@ import {
     {
       name: "PromptWorld",
       description:
-        "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. The website is builded using NextJS and TailwindCSS. MongoDB as the database and deployed on Vercel.",
+        "PromptWorld is a website that provides a platform for writers to share AI Prompt which is relate to particular topic. The website is builded using NextJS, TailwindCSS, and MongoDB as the database.",
+      tags: [
+        {
+          name: "Personal Project",
+          color: "",
+        },
+      ],
+      demologo: playarrow,
+      demourl: "https://promptworld-danis.vercel.app/",
+      image: promptworld,
+      source_code_link: "https://github.com/AvanFabian/next-fs-gptsharing.git",
+    },
+    {
+      name: "Schedu",
+      description:
+        "Final Project of Innovation Management Lecture. Schedu is simply an school online course, all of material provided by the Teacher there. Builded using NextJS, TailwindCSS, and MongoDB as the database.",
       tags: [
         {
           name: "Personal Project",
