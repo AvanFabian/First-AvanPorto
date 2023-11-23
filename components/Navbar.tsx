@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 // code above is link component from react-router-dom
 import { navLinks } from '@/constants';
-import { fabian, menu, close } from '@/public/assets';
+import { fabian, menu, close, DevelopmentIcon } from '@/public/assets';
 
 const Navbar = () => {
   const [active, setActive] = useState(''); // set active to empty string
@@ -20,13 +20,13 @@ const Navbar = () => {
       { /* Link is for routing */ }
         <Link
           href="/" // to is for destination
-          className='flex items-center gap-2'
+          className='relative flex items-center gap-2'
           onClick={() => { // when clicked
             setActive(""); // set active to empty string
             window.scrollTo(0, 0); // scroll to top when clicked
           }}
         >
-          <Image src={fabian} alt="fabian" className='w-12 h-12 rounded-full' />
+          <Image src={DevelopmentIcon} alt="fabian" className='w-9 h-9 rounded-full' />
           <p className='text-white text-[18px] 
           font-bold cursor-pointer flex'>
             Avan&nbsp;|&nbsp;Fabian

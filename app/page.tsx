@@ -6,11 +6,22 @@ const Contact = dynamic(() => import("@/components/Contact"));
 
 export default function Home() {
   return (
-    <main className="paddingAll max-w-7xl
-    mx-auto relative z-0">
-      <About />
-      <Works />
-      <Contact />
+    <main
+      className="max-w-full
+    mx-auto relative z-0"
+    >
+      <div className="paddingAll max-w-full bg-black-hole2 bg-fixed bg-cover
+    bg-no-repeat bg-center">
+        <About />
+      </div>
+      <div className="paddingAll max-w-full bg-sunset bg-fixed bg-cover
+    bg-no-repeat bg-center">
+        <Works />
+      </div>
+      <div className="paddingAll max-w-full bg-sunset2 bg-fixed bg-cover
+    bg-no-repeat bg-center">
+        <Contact />
+      </div>
     </main>
   );
 }

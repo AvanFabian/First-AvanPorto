@@ -20,20 +20,27 @@ import tesla from "./company/tesla.png";
 import crycast from "./company/crycast.png";
 import firstporto from "./company/firstporto.png";
 import promptworld from "./company/promptworld.png";
+import ML from "./ML.png";
 
 // Side navbar icon
 import abouticon from "./navigation/abouticon.svg";
 import certificon from "./navigation/certificon.svg";
 import projecticon from "./navigation/projecticon.svg";
 import contacticon from "./navigation/contacticon.svg";
+
 // navbar icon
 import githubicon from "./navigation/githubicon.svg";
 import linkedinicon from "./navigation/linkedinicon.svg";
 import igicon from "./navigation/igicon.svg";
 import home from "./navigation/home.svg";
+import DevelopmentIcon from "./navigation/DevelopmentIcon.svg";
+
+// profile picture
+import semiformal from "./myphoto/semiformal.jpg";
 
 export {
   fabian,
+  semiformal,
   playarrow,
   backend,
   creator,
@@ -61,4 +68,6 @@ export {
   crycast,
   firstporto,
   promptworld,
+  ML,
+  DevelopmentIcon,
 };

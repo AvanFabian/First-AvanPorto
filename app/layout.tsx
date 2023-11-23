@@ -1,7 +1,8 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
+import dynamic from "next/dynamic";
+const Navbar = dynamic(() => import("@/components/Navbar"));
+const Hero = dynamic(() => import("@/components/Hero"));
 
 export const metadata: Metadata = {
   title: "Fabian Daniswara",
@@ -18,8 +19,8 @@ export default function RootLayout({
       <body>
         <div className="relative z-0 black-blue-gradient">
           <div
-            className="relative bg-hero-planet bg-cover
-          bg-no-repeat bg-center"
+            className="relative bg-black-hole bg-fixed bg-cover
+            bg-no-repeat bg-center"
           >
             <Navbar />
             <Hero />

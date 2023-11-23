@@ -27,6 +27,11 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
           "hero-planet": "url('/assets/wallpaper/planethome.webp')", 
+          "black-hole": "url('/assets/wallpaper/blackhole.webp')",
+          "black-hole2": "url('/assets/wallpaper/blackhole2.webp')",
+          "sunset" : "url('/assets/wallpaper/sunset.webp')",
+          "sunset2" : "url('/assets/wallpaper/sunset2.webp')",
+          "dataran-planet" : "url('/assets/wallpaper/dataranplanet.webp')",
       },
     },
   },

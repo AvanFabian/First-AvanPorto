@@ -52,7 +52,7 @@ const ServiceCard = ({ index, title, icon }: ServiceCardProps) => {
 
 const About = () => {
   return (
-    <section>
+    <section className=''>
       <div >
         <p className='sectionSubText'
         >Introduction</p>
@@ -62,11 +62,11 @@ const About = () => {
 
       <p
         className='mt-4 text-secondary text-[17px]
-        max-w-3xl leading-[30px]'
+        max-w-3xl leading-[30px] capitalize'
       >
-        I am a student at the Universitas Negeri Malang, East Java, where I am majoring in computer science.&nbsp;
-        I am passionate about web development and UI/UX design, and I have been working on a number of personal projects&nbsp;
-        and university team projects.
+        I am a student at the Universitas Negeri Malang, East Java. Where I am majoring in computer science.&nbsp;
+        <br/>I've passion in web development and currently learn ML/AI. I've been working on a number of Personal<br />
+        and University projects Website.
       </p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

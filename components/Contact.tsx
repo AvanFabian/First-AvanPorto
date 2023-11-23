@@ -3,27 +3,27 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { useLottie } from "lottie-react";
-// import { EarthCanvas } from "./canvas"
 import { SectionWrapper } from "../hoc";
-import contactlottie from "@/public/assets/animations/contact-lottie1.json";
+import Image from "next/image";
+import { semiformal } from "@/public/assets";
 
-const RobotAnimation = () => {
-  const style2 = {
-    width: 400,
-    height: 550,
-    marginLeft: '100px',
-    display: "flex",
-  };
+// const RobotAnimation = () => {
+//   const style2 = {
+//     width: 400,
+//     height: 550,
+//     marginLeft: '100px',
+//     display: "flex",
+//   };
 
-  const options = {
-    animationData: contactlottie,
-    loop: true,
-    autoplay: true,
-  };
+//   const options = {
+//     animationData: contactlottie,
+//     loop: true,
+//     autoplay: true,
+//   };
 
-  const { View } = useLottie(options, style2);
-  return View;
-};
+//   const { View } = useLottie(options, style2);
+//   return View;
+// };
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -78,11 +78,10 @@ const Contact = () => {
 
   return (
     <div
-      className="mt-6 lg:mt-12 lg:flex-row
-     flex-col-reverse flex overflow-hidden"
+      className="bg-[#6e412e57] rounded-2xl lg:flex-row flex-col-reverse flex overflow-hidden"
     >
       {/* Contact */}
-      <div className="bg-black-100 w-full lg:w-[600px] h-full p-10 rounded-2xl">
+      <div className="w-full lg:w-[600px] border-r-2 border-[#020202] h-full p-10">
         <p className="sectionSubText">Get in touch</p>
         <h3 className="sectionHeadText">Contact.</h3>
         <form
@@ -106,7 +105,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your name?"
               // py is padding on y-axis, px is padding on x-axis
-              className="bg-tertiary py-3 px-6
+              className="bg-[#1f1616] py-3 px-6
               placeholder:text-secondary
               text-white rounded-2xl outlined-none
               border-none font-medium"
@@ -127,7 +126,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What's your email?"
               // py is padding on y-axis, px is padding on x-axis
-              className="bg-tertiary py-3 px-6
+              className="bg-[#1f1616] py-3 px-6
               placeholder:text-secondary
               text-white rounded-2xl outlined-none
               border-none font-medium"
@@ -148,7 +147,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder="What do you want to say?"
               // py is padding on y-axis, px is padding on x-axis
-              className="bg-tertiary py-3 px-6
+              className="bg-[#1f1616] py-3 px-6
               placeholder:text-secondary
               text-white rounded-2xl outlined-none
               border-none font-medium"
@@ -159,7 +158,7 @@ const Contact = () => {
             type="submit"
             // w-fit purpose is to make the button width
             // fit the content
-            className="bg-tertiary py-3 px-7
+            className="bg-[#1f1616] py-3 px-7
             outline-none w-fit text-white font-bold
             shadow-md rounded-2xl hover:bg-secondary
             hover:text-tertiary hover:font-bold"
@@ -168,11 +167,14 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      {/* Robot ANimation */}
+      {/* Profile Image */}
       <div
-        className="hidden lg:flex items-center justify-end w-full lg:w-[50%]"
+        className="hidden lg:flex items-center justify-center w-full lg:w-[50%]"
       >
-        <RobotAnimation />
+        <Image 
+          src={semiformal}
+          alt="semiformal"
+        />
       </div>
     </div>
   );

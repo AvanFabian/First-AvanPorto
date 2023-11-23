@@ -33,20 +33,7 @@ const Hero = () => {
             </h1>
             <p className='heroSubText mt-2
             text-[#ecebeb] opacity-80'>
-              I develop a&nbsp;Fullstack Web <br />and Mobile Apps
-              {/* <TypeAnimation
-                  sequence={[
-                    'Discover & Find', // Types 'Discover'
-                    1000, // Waits 1s
-                    'Discover & Find', // Types 'Discover'
-                    1000, // Waits 1s
-                    '', // Types ''
-                    500, // Waits 0.5s
-                  ]}
-                  wrapper="div"
-                  cursor={true}
-                  repeat={Infinity}
-              />               */}
+              Have Interest on&nbsp;Fullstack Web <br />& Machine Learning
               <br className="sm:block hidden"/>
             </p>
           </div>

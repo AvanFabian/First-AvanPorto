@@ -35,10 +35,10 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
           scale: 1,
           speed: 450
         }}
-        className="bg-tertiary p-5 rounded-2xl
+        className="relative bg-[#240d0da1] p-7 rounded-2xl
         sm:w-[360px] mx-auto h-full w-full"
       >
-        <div className="relative w-full h-[230px] transition-all">
+        <div className="w-full h-[230px] transition-all">
           <Image 
             src={image}
             alt={name}
@@ -83,7 +83,7 @@ tags, demologo, demourl, image, source_code_link}: ProjectCardProps ) => {
         </div>
 
         {/* BELOW IS FOR TECH STACK */}
-        <div className="flex flex-wrap gap-2 absolute bottom-[20px]">
+        <div className="flex flex-wrap gap-2 absolute bottom-3">
           {/* Map the tags */}
           {tags.map((tag: any) => (
             <p key={tag.name} className={`text-[14px]

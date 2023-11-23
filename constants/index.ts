@@ -5,6 +5,7 @@ import {
     backend,
     creator,
     web,
+    ML,
     carrent,
     jobit,
     tripguide,
@@ -73,8 +74,8 @@ import {
       icon: web,
     },
     {
-      title: "UI & UX Design",
-      icon: mobile,
+      title: "Data Science & ML",
+      icon: ML,
     },
   ];
 
