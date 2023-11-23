@@ -52,9 +52,9 @@ const Hero = () => {
           </div>
         </div>
         <div className=''>
-          <ul className='list-none px-2 py-6 top-[195.5px] right-0 my-2  
+          <ul className='list-none px-[16px] py-6 top-[195.5px] right-0 my-2  
           z-10 flex justify-end rounded-tl-xl rounded-bl-xl
-          items-start flex-col gap-12 fixed bg-[#4b4b4b9a]'> 
+          items-start flex-col gap-[44px] fixed bg-[#4b4b4b9a]'> 
             {sideLinks.map((link, index) => (
               <li
                 key={index} // key is for unique identifier

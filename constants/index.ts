@@ -230,9 +230,9 @@ import {
       source_code_link: "https://github.com/AvanFabian/next-fs-gptsharing.git",
     },
     {
-      name: "Schedu",
+      name: "SchEducation",
       description:
-        "Final Project of Innovation Management Lecture. Schedu is simply an school online course, all of material provided by the Teacher there. Builded using NextJS, TailwindCSS, and MongoDB as the database.",
+        "Final Project of Innovation Management Lecture. SchEducation is simply an school online course, all of material provided by the Teacher there. Builded using NextJS, TailwindCSS, and MongoDB as the database.",
       tags: [
         {
           name: "Personal Project",
@@ -240,9 +240,9 @@ import {
         },
       ],
       demologo: playarrow,
-      demourl: "https://promptworld-danis.vercel.app/",
+      demourl: "",
       image: promptworld,
-      source_code_link: "https://github.com/AvanFabian/next-fs-gptsharing.git",
+      source_code_link: "",
     },
   ];
   
