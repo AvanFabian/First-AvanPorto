@@ -78,10 +78,9 @@ const Contact = () => {
 
   return (
     <div
-      className="bg-[#6e412e57] rounded-2xl lg:flex-row flex-col-reverse flex overflow-hidden"
-    >
+      className="bg-[#6e412e57] rounded-2xl flex lg:flex-row flex-col-reverse overflow-hidden max-w-[300px] lg:max-w-full" >
       {/* Contact */}
-      <div className="w-full lg:w-[600px] border-r-2 border-[#020202] h-full p-10">
+      <div className="w-full lg:w-max lg:border-r-2 lg:border-[#020202] h-full p-10">
         <p className="sectionSubText">Get in touch</p>
         <h3 className="sectionHeadText">Contact.</h3>
         <form
@@ -140,9 +139,10 @@ const Contact = () => {
             >
               Your Message
             </span>
-            <input
-              type="text"
+            <textarea
               name="message"
+              rows={5}
+              cols={50}
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
@@ -151,7 +151,7 @@ const Contact = () => {
               placeholder:text-secondary
               text-white rounded-2xl outlined-none
               border-none font-medium"
-            ></input>
+            ></textarea>
           </label>
           {/* below is the submit button */}
           <button
@@ -169,7 +169,7 @@ const Contact = () => {
       </div>
       {/* Profile Image */}
       <div
-        className="hidden lg:flex items-center justify-center w-full lg:w-[50%]"
+        className="hidden lg:flex items-center justify-center w-full lg:w-max"
       >
         <Image 
           src={semiformal}
