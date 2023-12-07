@@ -4,6 +4,7 @@ import {
     playarrow,
     backend,
     creator,
+    scheducation,
     web,
     ML,
     carrent,
@@ -241,8 +242,8 @@ import {
         },
       ],
       demologo: playarrow,
-      demourl: "",
-      image: promptworld,
+      demourl: "https://sch-education.vercel.app/",
+      image: scheducation,
       source_code_link: "",
     },
   ];

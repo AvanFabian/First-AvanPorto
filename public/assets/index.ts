@@ -20,6 +20,7 @@ import tesla from "./company/tesla.png";
 import crycast from "./company/crycast.png";
 import firstporto from "./company/firstporto.png";
 import promptworld from "./company/promptworld.png";
+import scheducation from "./company/scheducation.png";
 import ML from "./ML.png";
 
 // Side navbar icon
@@ -70,4 +71,5 @@ export {
   promptworld,
   ML,
   DevelopmentIcon,
+  scheducation,
 };
