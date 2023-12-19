@@ -169,7 +169,7 @@ const Contact = () => {
       </div>
       {/* Profile Image */}
       <div
-        className="hidden lg:flex items-center justify-center w-full lg:w-max"
+        className="hidden lg:flex items-center justify-center w-full h-full"
       >
         <Image 
           src={semiformal}

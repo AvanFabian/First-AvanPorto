@@ -234,10 +234,10 @@ import {
     {
       name: "SchEducation",
       description:
-        "Final Project of Innovation Management Lecture. SchEducation is simply an school online course, all of material provided by the Teacher there. Builded using NextJS, TailwindCSS, and MongoDB as the database.",
+        "Final Project of Innovation Management Lecture. SchEducation is simply an school online course, all of material provided by the Teacher there. Builded using NextJS, TailwindCSS, and MongoDB as the database. I'm as a single Developer of this Project and this project still need more development",
       tags: [
         {
-          name: "Personal Project",
+          name: "Team Project",
           color: "",
         },
       ],
