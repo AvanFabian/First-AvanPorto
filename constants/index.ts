@@ -199,7 +199,7 @@ import {
       demologo: playarrow,
       demourl: "https://crycast.000webhostapp.com/",
       image: crycast,
-      source_code_link: "https://github.com/AvanFabian/cry-cast.git",
+      source_code_link: "",
     },
     {
       name: "First React Portfolio Website",
@@ -214,7 +214,7 @@ import {
       demologo: playarrow,
       demourl: "https://avanfabian.vercel.app/",
       image: firstporto,
-      source_code_link: "https://github.com/AvanFabian/Next-DaniswaraPorto.git",
+      source_code_link: "",
     },
     {
       name: "PromptWorld",
@@ -229,7 +229,7 @@ import {
       demologo: playarrow,
       demourl: "https://promptworld-danis.vercel.app/",
       image: promptworld,
-      source_code_link: "https://github.com/AvanFabian/next-fs-gptsharing.git",
+      source_code_link: "",
     },
     {
       name: "SchEducation",
